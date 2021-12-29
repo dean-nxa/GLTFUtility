@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Siccity.GLTFUtility.Converters;
+using Auki.GLTFUtility.Converters;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#accessor
 	/// <summary> Reads data from BufferViews </summary>
 	[Preserve] public class GLTFAccessor {

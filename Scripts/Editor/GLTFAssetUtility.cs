@@ -9,7 +9,7 @@ using UnityEditor.AssetImporters;
 #endif
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	/// <summary> Contains methods for saving a gameobject as an asset </summary>
 	public static class GLTFAssetUtility {
 		public static void SaveToAsset(GameObject root, AnimationClip[] animations, AssetImportContext ctx, ImportSettings settings) {

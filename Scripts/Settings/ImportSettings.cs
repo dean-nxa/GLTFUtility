@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	[Serializable]
 	public class ImportSettings {
 

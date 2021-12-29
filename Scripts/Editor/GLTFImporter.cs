@@ -7,7 +7,7 @@ using UnityEditor.AssetImporters;
 #endif
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	[ScriptedImporter(1, "gltf")]
 	public class GLTFImporter : ScriptedImporter {
 
