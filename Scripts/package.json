@@ -1,6 +1,6 @@
 {
-    "name": "com.siccity.gltfutility",
-    "displayName": "GLTFUtility",
+    "name": "com.aukilabs.unity.gltfutility",
+    "displayName": "Auki GLTFUtility",
     "version": "0.7.2",
     "unity": "2018.2",
     "keywords": ["glTF", "import"],

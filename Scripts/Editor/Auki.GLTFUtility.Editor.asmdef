@@ -1,0 +1,18 @@
+{
+    "name": "Auki.GLTFUtility.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d0310cb8536ca49b2989b98fa8a59739"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
