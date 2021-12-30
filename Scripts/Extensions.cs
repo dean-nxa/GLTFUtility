@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	public static class Extensions {
 
 		public class CoroutineRunner : MonoBehaviour { }

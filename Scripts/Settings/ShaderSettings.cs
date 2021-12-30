@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	/// <summary> Defines which shaders to use in the gltf import process </summary>
 	[Serializable]
 	public class ShaderSettings {

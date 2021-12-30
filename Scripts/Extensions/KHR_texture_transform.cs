@@ -1,9 +1,9 @@
 using Newtonsoft.Json;
-using Siccity.GLTFUtility.Converters;
+using Auki.GLTFUtility.Converters;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	/// <summary>
 	/// KHR_texture_transform textureInfo extension
 	/// glTF extension that enables shifting and scaling UV coordinates on a per-texture basis

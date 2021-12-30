@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{F41CF73C-43B1-48A0-86A3-8E68312E207D}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>AukiGLTFUtility</RootNamespace>
+        <AssemblyName>AukiGLTFUtility</AssemblyName>
+        <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE;UNITY_2018_2_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE;UNITY_2018_2_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml" />
+        <Reference Include=".\Dependencies\*.dll">
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Scripts\BufferedBinaryReader.cs" />
+        <Compile Include="Scripts\Converters\ColorConverter.cs" />
+        <Compile Include="Scripts\Converters\EnumConverter.cs" />
+        <Compile Include="Scripts\Converters\Matrix4x4Converter.cs" />
+        <Compile Include="Scripts\Converters\QuaternionConverter.cs" />
+        <Compile Include="Scripts\Converters\TranslationConverter.cs" />
+        <Compile Include="Scripts\Converters\Vector2Converter.cs" />
+        <Compile Include="Scripts\Converters\Vector3Converter.cs" />
+        <Compile Include="Scripts\Editor\GLBImporter.cs" />
+        <Compile Include="Scripts\Editor\GLTFAssetUtility.cs" />
+        <Compile Include="Scripts\Editor\GLTFImporter.cs" />
+        <Compile Include="Scripts\Editor\ShaderSettingsDrawer.cs" />
+        <Compile Include="Scripts\Enums.cs" />
+        <Compile Include="Scripts\Exporter.cs" />
+        <Compile Include="Scripts\Extensions.cs" />
+        <Compile Include="Scripts\Extensions\KHR_texture_transform.cs" />
+        <Compile Include="Scripts\Importer.cs" />
+        <Compile Include="Scripts\Settings\AnimationSettings.cs" />
+        <Compile Include="Scripts\Settings\ImportSettings.cs" />
+        <Compile Include="Scripts\Settings\ShaderSettings.cs" />
+        <Compile Include="Scripts\Spec\GLTFAccessor.cs" />
+        <Compile Include="Scripts\Spec\GLTFAnimation.cs" />
+        <Compile Include="Scripts\Spec\GLTFAsset.cs" />
+        <Compile Include="Scripts\Spec\GLTFBuffer.cs" />
+        <Compile Include="Scripts\Spec\GLTFBufferView.cs" />
+        <Compile Include="Scripts\Spec\GLTFCamera.cs" />
+        <Compile Include="Scripts\Spec\GLTFImage.cs" />
+        <Compile Include="Scripts\Spec\GLTFMaterial.cs" />
+        <Compile Include="Scripts\Spec\GLTFMesh.cs" />
+        <Compile Include="Scripts\Spec\GLTFNode.cs" />
+        <Compile Include="Scripts\Spec\GLTFObject.cs" />
+        <Compile Include="Scripts\Spec\GLTFPrimitive.cs" />
+        <Compile Include="Scripts\Spec\GLTFProperty.cs" />
+        <Compile Include="Scripts\Spec\GLTFScene.cs" />
+        <Compile Include="Scripts\Spec\GLTFSkin.cs" />
+        <Compile Include="Scripts\Spec\GLTFTexture.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Plugins" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

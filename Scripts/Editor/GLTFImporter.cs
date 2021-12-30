@@ -1,4 +1,5 @@
 ﻿using UnityEditor;
+using UnityEditor.AssetImporters;
 #if !UNITY_2020_2_OR_NEWER
 using UnityEditor.Experimental.AssetImporters;
 #else
@@ -6,7 +7,7 @@ using UnityEditor.AssetImporters;
 #endif
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	[ScriptedImporter(1, "gltf")]
 	public class GLTFImporter : ScriptedImporter {
 

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	/// <summary> Defines how animations are imported </summary>
 	[Serializable]
 	public class AnimationSettings {

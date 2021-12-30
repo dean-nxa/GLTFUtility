@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace Auki.GLTFUtility {
 	/// <summary> API used for importing .gltf and .glb files </summary>
 	public static class Importer {
 		public static GameObject LoadFromFile(string filepath, Format format = Format.AUTO) {
@@ -298,8 +298,6 @@ namespace Siccity.GLTFUtility {
 				for (int i = 0; i < gLTFObject.extensionsRequired.Count; i++) {
 					switch (gLTFObject.extensionsRequired[i]) {
 						case "KHR_materials_pbrSpecularGlossiness":
-							break;
-						case "KHR_draco_mesh_compression":
 							break;
 						default:
 							Debug.LogWarning($"GLTFUtility: Required extension '{gLTFObject.extensionsRequired[i]}' not supported. Import process will proceed but results may vary.");
